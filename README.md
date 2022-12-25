@@ -1,7 +1,7 @@
 # Test-Project-INSANE-GROUP-CO
 
 ## for all methods you need TOKEN
-## you can take TOKEN after registration
+## you can take TOKEN after registration or ligin
 
 ### request.heders.token => "TOKEN"
 ### pagination on Query Params in key "page"
