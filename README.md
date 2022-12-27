@@ -1,13 +1,32 @@
 # Test-Project-INSANE-GROUP-CO
 
-## for all methods you need TOKEN
-## you can take TOKEN after registration or ligin
+## For all methods you need ```TOKEN```
+## You can take ```TOKEN``` after registration or ligin
+#
 
-### request.heders.token => "TOKEN"
-### pagination on Query Params in key "page"
+### ```Each request must contain a token```
+```
+Request.heders.token => TOKEN
+```
+## ```Pagination on Query Params in key "page"```
 
-
-#### first step: registration => http://localhost:5000/user/register
+#
+## INSTALL
+```
+npm i
+```
+#
+## RUN project
+ ```
+ npm run start
+ ```
+#
+## RUN with ```nodemon```
+ ```
+ npm run start:dev
+ ```
+#
+#### ***```first step: registration =>```*** http://localhost:5000/user/register
     {
         "username": required!
         "password": required!
@@ -28,7 +47,7 @@
     }
 
 
-#### second step: login => http://localhost:5000/user/login
+#### ***``second step: login =>``*** http://localhost:5000/user/login
     {
         "username": required!
         "password": required!
@@ -47,31 +66,31 @@
         "token": ""
     }
 
-#### get all users: http://localhost:5000/profiles     pagination with Query Params => "?page=1"
+#### ***```get all users:```*** http://localhost:5000/profiles     ***```pagination with Query Params => "?page=1"```***
     response: []
 
-#### get one user: http://localhost:5000/profile/:userId
+#### ***```get one user:```*** http://localhost:5000/profile/:userId
     response: []
 
-#### change user: http://localhost:5000/profile/:userId
+#### ***```change user:```*** http://localhost:5000/profile/:userId
     {
         "username": "",
         "email": ""
     }.required!
 
-#### delete user: http://localhost:5000/profile/:userId
+#### ***`delete user:`*** http://localhost:5000/profile/:userId
 
 
-# POST
+# **POST**
 
-#### get all posts => http://localhost:5000/posts      pagination with Query Params => "?page=1"
+#### ***```get all posts =>```*** http://localhost:5000/posts      ***```pagination with Query Params => "?page=1"```***
     response: []
 
-#### get one user: http://localhost:5000/post/:postId
+#### ***```get one user:```*** http://localhost:5000/post/:postId
     response: []
 
 
-#### write post => method POST => http://localhost:5000/posts
+#### ***```write post => method POST =>```*** http://localhost:5000/posts
     {
         "title": "something",
         "content": "another something!"
@@ -83,7 +102,7 @@
         "data": {}
     }
 
-#### delete post => method delete => http://localhost:5000/post/:postId
+#### ***```delete post => method delete =>```*** http://localhost:5000/post/:postId
     response:
     {
         "status": ""
